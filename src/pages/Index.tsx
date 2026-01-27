@@ -4,20 +4,14 @@ import heroImage from "@/assets/hero-watercolor.jpg";
 import artwork1 from "@/assets/artwork-1.jpg";
 import artwork2 from "@/assets/artwork-2.jpg";
 import artwork3 from "@/assets/artwork-3.jpg";
-
 const Index = () => {
-  return (
-    <Layout>
+  return <Layout>
       {/* Hero Section */}
       <section className="relative min-h-[80vh] md:min-h-[90vh] flex items-center justify-center">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
-          <img
-            src={heroImage}
-            alt="Aquarelle de pivoines"
-            className="w-full h-full object-cover opacity-60"
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-transparent to-background" />
+          <img src={heroImage} alt="Aquarelle de pivoines" className="w-full h-full object-cover opacity-60" />
+          <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-transparent to-background bg-primary-foreground" />
         </div>
 
         {/* Hero Content */}
@@ -31,10 +25,7 @@ const Index = () => {
             Des œuvres originales peintes à la main, 
             où chaque coup de pinceau raconte une histoire
           </p>
-          <Link
-            to="/aquarelles"
-            className="inline-block font-body text-sm tracking-widest uppercase px-8 py-4 border border-foreground/30 rounded-full hover:bg-foreground hover:text-background transition-all duration-300 animate-fade-in-delay-2"
-          >
+          <Link to="/aquarelles" className="inline-block font-body text-sm tracking-widest uppercase px-8 py-4 border border-foreground/30 rounded-full hover:bg-foreground hover:text-background transition-all duration-300 animate-fade-in-delay-2">
             Découvrir les œuvres
           </Link>
         </div>
@@ -65,16 +56,9 @@ const Index = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
             {/* Card 1 */}
-            <Link
-              to="/aquarelles"
-              className="group block hover-lift"
-            >
+            <Link to="/aquarelles" className="group block hover-lift">
               <div className="image-reveal aspect-square rounded-lg overflow-hidden mb-4">
-                <img
-                  src={artwork1}
-                  alt="Branche botanique en aquarelle"
-                  className="w-full h-full object-cover"
-                />
+                <img src={artwork1} alt="Branche botanique en aquarelle" className="w-full h-full object-cover" />
               </div>
               <h3 className="font-display text-xl text-foreground mb-2">
                 Impressions
@@ -85,16 +69,9 @@ const Index = () => {
             </Link>
 
             {/* Card 2 */}
-            <Link
-              to="/aquarelles"
-              className="group block hover-lift"
-            >
+            <Link to="/aquarelles" className="group block hover-lift">
               <div className="image-reveal aspect-square rounded-lg overflow-hidden mb-4">
-                <img
-                  src={artwork2}
-                  alt="Vagues abstraites en aquarelle"
-                  className="w-full h-full object-cover"
-                />
+                <img src={artwork2} alt="Vagues abstraites en aquarelle" className="w-full h-full object-cover" />
               </div>
               <h3 className="font-display text-xl text-foreground mb-2">
                 Tirages limités
@@ -105,16 +82,9 @@ const Index = () => {
             </Link>
 
             {/* Card 3 */}
-            <Link
-              to="/aquarelles"
-              className="group block hover-lift"
-            >
+            <Link to="/aquarelles" className="group block hover-lift">
               <div className="image-reveal aspect-square rounded-lg overflow-hidden mb-4">
-                <img
-                  src={artwork3}
-                  alt="Paysage de montagnes brumeuses"
-                  className="w-full h-full object-cover"
-                />
+                <img src={artwork3} alt="Paysage de montagnes brumeuses" className="w-full h-full object-cover" />
               </div>
               <h3 className="font-display text-xl text-foreground mb-2">
                 Créations uniques
@@ -126,10 +96,7 @@ const Index = () => {
           </div>
 
           <div className="text-center mt-16">
-            <Link
-              to="/aquarelles"
-              className="inline-block font-body text-sm tracking-widest uppercase px-8 py-4 bg-foreground text-background rounded-full hover:opacity-90 transition-opacity duration-300"
-            >
+            <Link to="/aquarelles" className="inline-block font-body text-sm tracking-widest uppercase px-8 py-4 bg-foreground text-background rounded-full hover:opacity-90 transition-opacity duration-300">
               Voir toutes les collections
             </Link>
           </div>
@@ -147,17 +114,12 @@ const Index = () => {
               Vous souhaitez une aquarelle personnalisée pour un événement 
               particulier ou un cadeau unique ? N'hésitez pas à me contacter.
             </p>
-            <Link
-              to="/contact"
-              className="inline-block font-body text-sm tracking-widest uppercase px-8 py-4 border border-foreground/30 rounded-full hover:bg-foreground hover:text-background transition-all duration-300"
-            >
+            <Link to="/contact" className="inline-block font-body text-sm tracking-widest uppercase px-8 py-4 border border-foreground/30 rounded-full hover:bg-foreground hover:text-background transition-all duration-300">
               Me contacter
             </Link>
           </div>
         </div>
       </section>
-    </Layout>
-  );
+    </Layout>;
 };
-
 export default Index;
