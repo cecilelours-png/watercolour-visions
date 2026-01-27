@@ -6,44 +6,44 @@
 
 @layer base {
   :root {
-    /* Zen watercolor palette */
-    --background: 40 33% 98%;
-    --foreground: 30 10% 25%;
+    /* Peachy beige palette - soft and feminine */
+    --background: 30 40% 97%;
+    --foreground: 20 15% 25%;
 
-    --card: 40 25% 96%;
-    --card-foreground: 30 10% 25%;
+    --card: 25 35% 95%;
+    --card-foreground: 20 15% 25%;
 
-    --popover: 40 33% 98%;
-    --popover-foreground: 30 10% 25%;
+    --popover: 30 40% 97%;
+    --popover-foreground: 20 15% 25%;
 
-    --primary: 30 15% 35%;
-    --primary-foreground: 40 33% 98%;
+    --primary: 20 20% 40%;
+    --primary-foreground: 30 40% 97%;
 
-    --secondary: 35 20% 92%;
-    --secondary-foreground: 30 10% 25%;
+    --secondary: 25 30% 93%;
+    --secondary-foreground: 20 15% 25%;
 
-    --muted: 35 15% 94%;
-    --muted-foreground: 30 8% 50%;
+    --muted: 28 25% 94%;
+    --muted-foreground: 20 12% 50%;
 
-    --accent: 20 25% 88%;
-    --accent-foreground: 30 10% 25%;
+    --accent: 15 40% 92%;
+    --accent-foreground: 20 15% 25%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 35 15% 88%;
-    --input: 35 15% 88%;
-    --ring: 30 15% 35%;
+    --border: 20 25% 88%;
+    --input: 20 25% 88%;
+    --ring: 20 20% 40%;
 
     --radius: 0.75rem;
 
     /* Custom colors for the art site */
-    --cream: 40 33% 98%;
-    --warm-beige: 35 20% 92%;
-    --soft-taupe: 30 12% 70%;
-    --charcoal: 30 10% 25%;
-    --blush: 15 25% 90%;
-    --sage: 90 10% 85%;
+    --cream: 30 40% 97%;
+    --warm-beige: 28 35% 92%;
+    --soft-taupe: 20 15% 65%;
+    --charcoal: 20 15% 25%;
+    --blush: 12 45% 93%;
+    --sage: 15 30% 90%;
     
     /* Typography */
     --font-display: 'Playfair Display', serif;
