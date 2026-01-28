@@ -53,7 +53,7 @@ porteurs d’une histoire, d’une émotion, d’un lien que l’on choisit d’
             {/* Card 1 */}
             <Link to="/aquarelles" className="group block hover-lift">
               <div className="image-reveal aspect-square rounded-lg overflow-hidden mb-4">
-                <img alt="Branche botanique en aquarelle" className="w-full h-full object-cover" src="/lovable-uploads/44e670f3-c898-4ddb-82f8-4f9f40ad0443.jpg" />
+                <img alt="Branche botanique en aquarelle" className="w-full h-full object-cover object-top" src="/lovable-uploads/44e670f3-c898-4ddb-82f8-4f9f40ad0443.jpg" />
               </div>
               <h3 className="font-display text-xl text-foreground mb-2">
                 Impressions
