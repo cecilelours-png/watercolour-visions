@@ -21,10 +21,8 @@ const Index = () => {
             <br />
             <span className="text-muted-foreground">ou à s'offrir</span>
           </h1>
-          <p className="font-body text-lg md:text-xl text-muted-foreground max-w-xl mx-auto animate-fade-in-delay mb-10">
-            Des œuvres originales peintes à la main, 
-            où chaque coup de pinceau raconte une histoire
-          </p>
+          <p className="font-body text-lg md:text-xl text-muted-foreground max-w-xl mx-auto animate-fade-in-delay mb-10">Un cadeau personnel, une œuvre à collectionner, 
+            une carte à envoyer ou à afficher... </p>
           <Link to="/aquarelles" className="inline-block font-body text-sm tracking-widest uppercase px-8 py-4 border border-foreground/30 rounded-full hover:bg-foreground hover:text-background transition-all duration-300 animate-fade-in-delay-2">
             Découvrir les œuvres
           </Link>
@@ -38,11 +36,8 @@ const Index = () => {
             <h2 className="font-display text-3xl md:text-4xl text-foreground mb-6">
               L'univers Colours Await
             </h2>
-            <p className="font-body text-muted-foreground leading-relaxed">
-              Chaque aquarelle est une invitation à la contemplation. Des paysages 
-              oniriques aux compositions florales délicates, découvrez des œuvres 
-              qui apportent sérénité et poésie à votre quotidien.
-            </p>
+            <p className="font-body text-muted-foreground leading-relaxed">              Je peins des aquarelles pensées pour devenir des cadeaux personnels, 
+              porteurs d’une histoire, d’une émotion, d’un lien que l’on choisit d’offrir.</p>
           </div>
         </div>
       </section>
@@ -58,7 +53,7 @@ const Index = () => {
             {/* Card 1 */}
             <Link to="/aquarelles" className="group block hover-lift">
               <div className="image-reveal aspect-square rounded-lg overflow-hidden mb-4">
-                <img src={artwork1} alt="Branche botanique en aquarelle" className="w-full h-full object-cover" />
+                <img alt="Branche botanique en aquarelle" className="w-full h-full object-cover" src="/lovable-uploads/44e670f3-c898-4ddb-82f8-4f9f40ad0443.jpg" />
               </div>
               <h3 className="font-display text-xl text-foreground mb-2">
                 Impressions
