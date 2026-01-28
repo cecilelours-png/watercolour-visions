@@ -21,8 +21,10 @@ const Index = () => {
             <br />
             <span className="text-muted-foreground">ou à s'offrir</span>
           </h1>
-          <p className="font-body text-lg md:text-xl text-muted-foreground max-w-xl mx-auto animate-fade-in-delay mb-10">Un cadeau personnel, une œuvre à collectionner, 
-une carte à envoyer ou à afficher... </p>
+          <p className="font-body text-lg md:text-xl text-muted-foreground max-w-xl mx-auto animate-fade-in-delay mb-10">
+            Un cadeau personnel, une œuvre à collectionner,
+            une carte à envoyer ou à afficher... 
+          </p>
           <Link to="/aquarelles" className="inline-block font-body text-sm tracking-widest uppercase px-8 py-4 border border-foreground/30 rounded-full hover:bg-foreground hover:text-background transition-all duration-300 animate-fade-in-delay-2">
             Découvrir les œuvres
           </Link>
@@ -36,8 +38,9 @@ une carte à envoyer ou à afficher... </p>
             <h2 className="font-display text-3xl md:text-4xl text-foreground mb-6">
               L'univers Colours Await
             </h2>
-            <p className="font-body text-muted-foreground leading-relaxed">              Je peins des aquarelles pensées pour devenir des cadeaux personnels, 
-porteurs d’une histoire, d’une émotion, d’un lien que l’on choisit d’offrir.</p>
+            <p className="font-body text-muted-foreground leading-relaxed">
+              Je peins des aquarelles pensées pour devenir des cadeaux personnels,
+              porteurs d’une histoire, d’une émotion, d’un lien que l’on choisit d’offrir.</p>
           </div>
         </div>
       </section>
@@ -53,7 +56,7 @@ porteurs d’une histoire, d’une émotion, d’un lien que l’on choisit d’
             {/* Card 1 */}
             <Link to="/aquarelles" className="group block hover-lift">
               <div className="image-reveal aspect-square rounded-lg overflow-hidden mb-4">
-                <img alt="Branche botanique en aquarelle" className="w-full h-full object-cover object-top" src="/lovable-uploads/44e670f3-c898-4ddb-82f8-4f9f40ad0443.jpg" />
+                <img src={artwork1} alt="Branche botanique en aquarelle" className="w-full h-full object-cover object-top" src="/lovable-uploads/44e670f3-c898-4ddb-82f8-4f9f40ad0443.jpg" />
               </div>
               <h3 className="font-display text-xl text-foreground mb-2">
                 Impressions
@@ -64,7 +67,7 @@ porteurs d’une histoire, d’une émotion, d’un lien que l’on choisit d’
             {/* Card 2 */}
             <Link to="/aquarelles" className="group block hover-lift">
               <div className="image-reveal aspect-square rounded-lg overflow-hidden mb-4">
-                <img alt="Vagues abstraites en aquarelle" className="w-full h-full object-cover" src="/lovable-uploads/94bbc4d6-91d7-4b9d-b7e7-756c0230c819.jpg" />
+                <img src={artwork1} alt="Vagues abstraites en aquarelle" className="w-full h-full object-cover" src="/lovable-uploads/94bbc4d6-91d7-4b9d-b7e7-756c0230c819.jpg" />
               </div>
               <h3 className="font-display text-xl text-foreground mb-2">
                 Tirages limités
@@ -75,7 +78,7 @@ porteurs d’une histoire, d’une émotion, d’un lien que l’on choisit d’
             {/* Card 3 */}
             <Link to="/aquarelles" className="group block hover-lift">
               <div className="image-reveal aspect-square rounded-lg overflow-hidden mb-4">
-                <img alt="Paysage de montagnes brumeuses" className="w-full h-full object-cover" src="/lovable-uploads/a93574b9-e42e-460b-8da6-19435320affb.jpg" />
+                <img src={artwork1} alt="Paysage de montagnes brumeuses" className="w-full h-full object-cover" src="/lovable-uploads/a93574b9-e42e-460b-8da6-19435320affb.jpg" />
               </div>
               <h3 className="font-display text-xl text-foreground mb-2">
                 Créations uniques
