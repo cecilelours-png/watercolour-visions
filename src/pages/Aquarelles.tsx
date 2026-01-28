@@ -14,17 +14,17 @@ const tabs = [
 
 const artworks = {
   impressions: [
-    { id: 1, image: artwork1, title: "Branche de printemps", price: "45 €" },
-    { id: 2, image: artwork2, title: "Vagues d'été", price: "45 €" },
-    { id: 3, image: artwork3, title: "Brume matinale", price: "45 €" },
+    { id: 1, image: eteaparis, title: "Branche de printemps", price: "45 €" },
+    { id: 2, image: firstkissaucanal, title: "Vagues d'été", price: "45 €" },
+    { id: 3, image: lacolonnemorris, title: "Brume matinale", price: "45 €" },
   ],
   tirages: [
-    { id: 1, image: artwork3, title: "Horizon paisible", price: "120 €", edition: "1/30" },
-    { id: 2, image: artwork1, title: "Floraison délicate", price: "120 €", edition: "5/30" },
+    { id: 1, image: lacolonnemorris, title: "Horizon paisible", price: "120 €", edition: "1/30" },
+    { id: 2, image: eteaparis, title: "Floraison délicate", price: "120 €", edition: "5/30" },
   ],
   uniques: [
-    { id: 1, image: artwork2, title: "L'océan rêveur", price: "350 €", size: "30 x 40 cm" },
-    { id: 2, image: artwork3, title: "Montagnes de brume", price: "450 €", size: "40 x 50 cm" },
+    { id: 1, image: firstkissaucanal, title: "L'océan rêveur", price: "350 €", size: "30 x 40 cm" },
+    { id: 2, image: lacolonnemorris, title: "Montagnes de brume", price: "450 €", size: "40 x 50 cm" },
   ],
 };
 
