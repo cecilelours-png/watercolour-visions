@@ -20,7 +20,7 @@ import norvege from "@/assets/norvege.jpg";
 import matisse from "@/assets/matisse.jpg";
 import ronron from "@/assets/ronron.jpg";
 import swing from "@/assets/swing.jpg";
-import andres from "@/assets/andreas.jpg";
+import andreas from "@/assets/andreas.jpg";
 import chrysopigi from "@/assets/chrysopigi.jpg";
 import merry from "@/assets/merry.jpg";
 import rouge from "@/assets/rouge.jpg";
@@ -97,7 +97,7 @@ const artworks = {
     ],
     vacances: [
       { id: 18, image: chrysopigi, title: "Coin chill au Monastère", size: "A6" },
-      { id: 19, image: andres, title: "Agios Andreas, Sifnos", size: "A6" },
+      { id: 19, image: andreas, title: "Agios Andreas, Sifnos", size: "A6" },
     ],
     voeux: [
       { id: 20, image: merry, title: "Merry 1st Christmas", size: "13 x 18 cm" },
