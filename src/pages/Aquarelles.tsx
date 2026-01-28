@@ -113,16 +113,16 @@ const artworks = {
 
 const tabDescriptions = {
   impressions: {
-    title: "Impressions d'art",
-    description: "Reproductions fidèles sur papier d'art de haute qualité. Chaque impression est réalisée avec des encres pigmentaires garantissant une durabilité exceptionnelle.",
+    title: "Impressions",
+    description: "Des souvenirs au format carte postale, imprimés sur un papier de qualité.",
   },
   tirages: {
     title: "Tirages limités",
-    description: "Éditions numérotées et signées à la main. Chaque tirage est accompagné d'un certificat d'authenticité et produit en quantité limitée à 30 exemplaires.",
+    description: "Éditions numérotées et signées à la main. Chaque tirage est produit en quantité limitée à 30 exemplaires.",
   },
   uniques: {
     title: "Créations uniques",
-    description: "Œuvres originales peintes à la main sur papier aquarelle 100% coton. Chaque pièce est unique et témoigne d'un moment créatif particulier.",
+    description: "Une aquarelle originale personnalisée, imaginée selon vos envies.",
   },
 };
 
@@ -165,7 +165,7 @@ const Aquarelles = () => {
           </h1>
           <p className="font-body text-muted-foreground max-w-xl mx-auto">
             Explorez mes différentes collections et trouvez l'œuvre 
-            qui résonnera avec votre sensibilité.
+            qui vous inspire.
           </p>
         </div>
       </section>
