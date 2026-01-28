@@ -22,6 +22,8 @@ import ronron from "@/assets/ronron.JPEG";
 import swing from "@/assets/swing.JPEG";
 import andres from "@/assets/andreas.JPEG";
 import chrysopigi from "@/assets/chrysopigi.JPEG";
+import merry from "@/assets/merry.JPEG";
+import rouge from "@/assets/rouge.JPEG";
 
 type TabType = "impressions" | "tirages" | "uniques";
 
@@ -76,30 +78,35 @@ const artworks = {
   },
   tirages: {
     inspiration: [
-      { id: 1, image: colonnemorris, title: "La colonne Morris", price: "15 €", edition: "3/30" },
-      { id: 2, image: metropolitain, title: "Le Metropolitain", price: "15 €", edition: "5/30" },
+      { id: 8, image: colonnemorris, title: "La colonne Morris", price: "15 €", edition: "3/30" },
+      { id: 9, image: metropolitain, title: "Le Metropolitain", price: "15 €", edition: "5/30" },
     ],
   },
   uniques: {
     lieux: [
-      { id: 1, image: firstkissaucanal, title: "L'océan rêveur", price: "350 €", size: "30 x 40 cm" },
+      { id: 10, image: canal, title: "First kiss au Canal Saint Martin", size: "A4" },
+      { id: 11, image: grau, title: "Le Grau-de-la-Reine", size: "13 x 18 cm" },
+      { id: 12, image: norvege, title: "Voyage en Norvège", size: "A4" },
     ],
     enfants: [
-      { id: 2, image: agathe, title: "Agathe", size: "13 x 18 cm" },
-      { id: 2, image: alix, title: "Alix", size: "13 x 18 cm" },
-      { id: 2, image: leonard, title: "Léonard", size: "13 x 18 cm" },
-      { id: 2, image: lou, title: "Lou", size: "13 x 18 cm" },
-      { id: 2, image: albane, title: "Albane", size: "13 x 18 cm" },
+      { id: 13, image: agathe, title: "Agathe", size: "13 x 18 cm" },
+      { id: 14, image: alix, title: "Alix", size: "13 x 18 cm" },
+      { id: 15, image: leonard, title: "Léonard", size: "13 x 18 cm" },
+      { id: 16, image: lou, title: "Lou", size: "13 x 18 cm" },
+      { id: 17, image: albane, title: "Albane", size: "13 x 18 cm" },
     ],
     vacances: [
-      { id: 2, image: chrysopigi, title: "Coin chill au Monastère", size: "A6" },
-      { id: 2, image: andreas, title: "Agios Andreas, Sifnos", size: "A6" },
+      { id: 18, image: chrysopigi, title: "Coin chill au Monastère", size: "A6" },
+      { id: 19, image: andreas, title: "Agios Andreas, Sifnos", size: "A6" },
     ],
-    voeux: [],
+    voeux: [
+      { id: 20, image: merry, title: "Merry 1st Christmas", size: "13 x 18 cm" },
+      { id: 21, image: rouge, title: "Lots of Love", size: "13 x 18 cm" },
+    ],
     autres: [
-      { id: 2, image: matisse, title: "La blouse romaine", size: "13 x 18 cm" },
-      { id: 2, image: ronron, title: "Ronron thérapie", size: "13 x 18 cm" },
-      { id: 2, image: swing, title: "Let's swing", size: "13 x 18 cm double" },
+      { id: 22, image: matisse, title: "La blouse romaine", size: "13 x 18 cm" },
+      { id: 23, image: ronron, title: "Ronron thérapie", size: "13 x 18 cm" },
+      { id: 24, image: swing, title: "Let's swing", size: "13 x 18 cm double" },
     ],
   },
 };
