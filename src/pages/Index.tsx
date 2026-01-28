@@ -58,9 +58,7 @@ const Index = () => {
               <h3 className="font-display text-xl text-foreground mb-2">
                 Impressions
               </h3>
-              <p className="font-body text-sm text-muted-foreground">
-                Reproductions de qualité sur papier d'art
-              </p>
+              <p className="font-body text-sm text-muted-foreground">Des souvenirs au format carte postale, imprimés sur un papier de qualité.</p>
             </Link>
 
             {/* Card 2 */}
@@ -71,9 +69,9 @@ const Index = () => {
               <h3 className="font-display text-xl text-foreground mb-2">
                 Tirages limités
               </h3>
-              <p className="font-body text-sm text-muted-foreground">
-                Éditions numérotées et signées
-              </p>
+              <p className="font-body text-sm text-muted-foreground">Tirages d’aquarelle en édition limitée, 
+                signés et numérotés à la main.
+Imprimés sur papier d’art.</p>
             </Link>
 
             {/* Card 3 */}
