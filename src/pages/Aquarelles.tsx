@@ -59,7 +59,7 @@ const artworks = {
     mobilier: [
       { id: 5, image: lampadaire, title: "Le lampadaire", price: "2,50 €" },
       { id: 6, image: metro, title: "Le métro", price: "2,50 €" },
-      { id: 7, image: Banc, title: "Le banc", price: "2,50 €" },
+      { id: 7, image: banc, title: "Le banc", price: "2,50 €" },
     ],
   },
   tirages: {
