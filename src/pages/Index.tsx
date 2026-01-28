@@ -22,7 +22,7 @@ const Index = () => {
             <span className="text-muted-foreground">ou à s'offrir</span>
           </h1>
           <p className="font-body text-lg md:text-xl text-muted-foreground max-w-xl mx-auto animate-fade-in-delay mb-10">Un cadeau personnel, une œuvre à collectionner, 
-            une carte à envoyer ou à afficher... </p>
+une carte à envoyer ou à afficher... </p>
           <Link to="/aquarelles" className="inline-block font-body text-sm tracking-widest uppercase px-8 py-4 border border-foreground/30 rounded-full hover:bg-foreground hover:text-background transition-all duration-300 animate-fade-in-delay-2">
             Découvrir les œuvres
           </Link>
@@ -37,7 +37,7 @@ const Index = () => {
               L'univers Colours Await
             </h2>
             <p className="font-body text-muted-foreground leading-relaxed">              Je peins des aquarelles pensées pour devenir des cadeaux personnels, 
-              porteurs d’une histoire, d’une émotion, d’un lien que l’on choisit d’offrir.</p>
+porteurs d’une histoire, d’une émotion, d’un lien que l’on choisit d’offrir.</p>
           </div>
         </div>
       </section>
@@ -69,22 +69,18 @@ const Index = () => {
               <h3 className="font-display text-xl text-foreground mb-2">
                 Tirages limités
               </h3>
-              <p className="font-body text-sm text-muted-foreground">Tirages d’aquarelle en édition limitée, 
-                signés et numérotés à la main.
-Imprimés sur papier d’art.</p>
+              <p className="font-body text-sm text-muted-foreground">Tirages d’aquarelle en édition limitée, numérotés et signés à la main. Imprimés sur papier d’art.</p>
             </Link>
 
             {/* Card 3 */}
             <Link to="/aquarelles" className="group block hover-lift">
               <div className="image-reveal aspect-square rounded-lg overflow-hidden mb-4">
-                <img src={artwork3} alt="Paysage de montagnes brumeuses" className="w-full h-full object-cover" />
+                <img alt="Paysage de montagnes brumeuses" className="w-full h-full object-cover" src="/lovable-uploads/a93574b9-e42e-460b-8da6-19435320affb.jpg" />
               </div>
               <h3 className="font-display text-xl text-foreground mb-2">
                 Créations uniques
               </h3>
-              <p className="font-body text-sm text-muted-foreground">
-                Œuvres originales, pièces uniques
-              </p>
+              <p className="font-body text-sm text-muted-foreground">Une aquarelle originale personnalisée, pour offrir un cadeau unique.</p>
             </Link>
           </div>
 
