@@ -97,7 +97,7 @@ const artworks = {
     ],
     vacances: [
       { id: 18, image: chrysopigi, title: "Coin chill au Monastère", size: "A6" },
-      { id: 19, image: andreas, title: "Agios Andreas, Sifnos", size: "A6" },
+      { id: 19, image: andres, title: "Agios Andreas, Sifnos", size: "A6" },
     ],
     voeux: [
       { id: 20, image: merry, title: "Merry 1st Christmas", size: "13 x 18 cm" },
