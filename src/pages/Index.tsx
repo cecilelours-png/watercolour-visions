@@ -66,7 +66,7 @@ const Index = () => {
             {/* Card 2 */}
             <Link to="/aquarelles" className="group block hover-lift">
               <div className="image-reveal aspect-square rounded-lg overflow-hidden mb-4">
-                <img src={artwork2} alt="Vagues abstraites en aquarelle" className="w-full h-full object-cover" />
+                <img alt="Vagues abstraites en aquarelle" className="w-full h-full object-cover" src="/lovable-uploads/94bbc4d6-91d7-4b9d-b7e7-756c0230c819.jpg" />
               </div>
               <h3 className="font-display text-xl text-foreground mb-2">
                 Tirages limités
