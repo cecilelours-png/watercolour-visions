@@ -64,22 +64,22 @@ const tabs: { id: TabType; label: string; subFilters: SubFilter[] }[] = [
 const artworks = {
   impressions: {
     saisons: [
-      { id: 1, image: printemps, title: "Printemps à Paris", price: "2,50 €" },
-      { id: 2, image: ete, title: "Été à Paris", price: "2,50 €" },
-      { id: 3, image: automne, title: "Automne à Paris", price: "2,50 €" },
-      { id: 4, image: hiver, title: "Hiver à Paris", price: "2,50 €" },
+      { id: 1, image: printemps, title: "Printemps à Paris", price: "2,50 €", size: "A6" },
+      { id: 2, image: ete, title: "Été à Paris", price: "2,50 €", size: "A6" },
+      { id: 3, image: automne, title: "Automne à Paris", price: "2,50 €", size: "A6" },
+      { id: 4, image: hiver, title: "Hiver à Paris", price: "2,50 €", size: "A6" },
       
     ],
     mobilier: [
-      { id: 5, image: lampadaire, title: "Le lampadaire", price: "2,50 €" },
-      { id: 6, image: metro, title: "Le métro", price: "2,50 €" },
-      { id: 7, image: banc, title: "Le banc", price: "2,50 €" },
+      { id: 5, image: lampadaire, title: "Le lampadaire", price: "2,50 €", size: "A6"  },
+      { id: 6, image: metro, title: "Le métro", price: "2,50 €", size: "A6"  },
+      { id: 7, image: banc, title: "Le banc", price: "2,50 €", size: "A6  },
     ],
   },
   tirages: {
     inspiration: [
-      { id: 8, image: colonnemorris, title: "La colonne Morris", price: "15 €", edition: "3/30" },
-      { id: 9, image: metropolitain, title: "Le Metropolitain", price: "15 €", edition: "5/30" },
+      { id: 8, image: colonnemorris, title: "La colonne Morris", price: "15 €", edition: "3/30", size: "A5" },
+      { id: 9, image: metropolitain, title: "Le Metropolitain", price: "15 €", edition: "5/30", size: "A5" },
     ],
   },
   uniques: {
