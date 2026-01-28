@@ -20,6 +20,8 @@ import norvege from "@/assets/norvege.JPEG";
 import matisse from "@/assets/matisse.JPEG";
 import ronron from "@/assets/ronron.JPEG";
 import swing from "@/assets/swing.JPEG";
+import andres from "@/assets/andreas.JPEG";
+import chrysopigi from "@/assets/chrysopigi.JPEG";
 
 type TabType = "impressions" | "tirages" | "uniques";
 
@@ -90,9 +92,8 @@ const artworks = {
       { id: 2, image: albane, title: "Albane", size: "13 x 18 cm" },
     ],
     vacances: [
-      { id: 2, image: canal, title: "First Kiss au Canal Saint Martin", size: "A4" },
-      { id: 2, image: grau, title: "Le Grau-de-la-Reine", size: "13 x 18 cm" },
-      { id: 2, image: norvege, title: "Voyage en Norvège", size: "A4" },
+      { id: 2, image: chrysopigi, title: "Coin chill au Monastère", size: "A6" },
+      { id: 2, image: andreas, title: "Agios Andreas, Sifnos", size: "A6" },
     ],
     voeux: [],
     autres: [
