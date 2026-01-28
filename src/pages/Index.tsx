@@ -56,7 +56,7 @@ const Index = () => {
             {/* Card 1 */}
             <Link to="/aquarelles" className="group block hover-lift">
               <div className="image-reveal aspect-square rounded-lg overflow-hidden mb-4">
-                <img src={eteaparis} alt="Ete à Paris" className="w-full h-full object-cover object-top" src="/lovable-uploads/44e670f3-c898-4ddb-82f8-4f9f40ad0443.jpg" />
+                <img src={eteaparis} alt="Ete à Paris" className="w-full h-full object-cover object-top" />
               </div>
               <h3 className="font-display text-xl text-foreground mb-2">
                 Impressions
@@ -70,7 +70,7 @@ const Index = () => {
             {/* Card 2 */}
             <Link to="/aquarelles" className="group block hover-lift">
               <div className="image-reveal aspect-square rounded-lg overflow-hidden mb-4">
-                <img src={lacolonnemorris} alt="La colonne Morris" className="w-full h-full object-cover" src="/lovable-uploads/94bbc4d6-91d7-4b9d-b7e7-756c0230c819.jpg" />
+                <img src={lacolonnemorris} alt="La colonne Morris" className="w-full h-full object-cover object-top" />
               </div>
               <h3 className="font-display text-xl text-foreground mb-2">
                 Tirages limités
@@ -85,7 +85,7 @@ const Index = () => {
             {/* Card 3 */}
             <Link to="/aquarelles" className="group block hover-lift">
               <div className="image-reveal aspect-square rounded-lg overflow-hidden mb-4">
-                <img src={firstkissaucanal} alt="First kiss au Canal Saint Martin" className="w-full h-full object-cover" src="/lovable-uploads/a93574b9-e42e-460b-8da6-19435320affb.jpg" />
+                <img src={firstkissaucanal} alt="First kiss au Canal Saint Martin" className="w-full h-full object-cover object-top" />
               </div>
               <h3 className="font-display text-xl text-foreground mb-2">
                 Créations uniques
