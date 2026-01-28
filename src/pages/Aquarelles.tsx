@@ -1,8 +1,5 @@
 import { useState } from "react";
 import Layout from "@/components/layout/Layout";
-import eteaparis from "@/assets/eteaparis.jpg";
-import firstkissaucanal from "@/assets/firstkissaucanal.jpg";
-import lacolonnemorris from "@/assets/lacolonnemorris.jpg";
 import ete from "@/assets/ete.JPEG";
 import automne from "@/assets/automne.JPEG";
 import hiver from "@/assets/hiver.JPEG";
@@ -10,6 +7,8 @@ import printemps from "@/assets/printemps.JPEG";
 import banc from "@/assets/banc.JPEG";
 import metro from "@/assets/metro.JPEG";
 import lampadaire from "@/assets/lampadaire.JPEG";
+import colonnemorris from "@/assets/colonnemorris.JPEG";
+import metropolitain from "@/assets/metropolitain.JPEG";
 
 type TabType = "impressions" | "tirages" | "uniques";
 
@@ -64,8 +63,8 @@ const artworks = {
   },
   tirages: {
     inspiration: [
-      { id: 1, image: lacolonnemorris, title: "Horizon paisible", price: "120 €", edition: "1/30" },
-      { id: 2, image: eteaparis, title: "Floraison délicate", price: "120 €", edition: "5/30" },
+      { id: 1, image: colonnemorris, title: "La colonne Morris", price: "15 €", edition: "3/30" },
+      { id: 2, image: metropolitain, title: "Le Metropolitain", price: "15 €", edition: "5/30" },
     ],
   },
   uniques: {
