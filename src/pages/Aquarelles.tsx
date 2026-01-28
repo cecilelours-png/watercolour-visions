@@ -14,6 +14,9 @@ import alix from "@/assets/alix.JPEG";
 import leonard from "@/assets/leonard.JPEG";
 import lou from "@/assets/lou.JPEG";
 import albane from "@/assets/albane.JPEG";
+import canal from "@/assets/canal.JPEG";
+import grau from "@/assets/grau.JPEG";
+import norvege from "@/assets/norvege.JPEG";
 
 type TabType = "impressions" | "tirages" | "uniques";
 
@@ -83,7 +86,11 @@ const artworks = {
       { id: 2, image: lou, title: "Lou", size: "13 x 18 cm" },
       { id: 2, image: albane, title: "Albane", size: "13 x 18 cm" },
     ],
-    vacances: [],
+    vacances: [
+      { id: 2, image: canal, title: "First Kiss au Canal Saint Martin", size: "A4" },
+      { id: 2, image: grau, title: "Le Grau-de-la-Reine", size: "13 x 18 cm" },
+      { id: 2, image: norvege, title: "Voyage en Norvège", size: "A4" },
+    ],
     voeux: [],
     autres: [],
   },
