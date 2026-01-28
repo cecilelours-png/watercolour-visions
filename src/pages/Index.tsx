@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import Layout from "@/components/layout/Layout";
 import heroImage from "@/assets/hero-watercolor.jpg";
-import artwork1 from "@/assets/artwork-1.jpg";
-import artwork2 from "@/assets/artwork-2.jpg";
-import artwork3 from "@/assets/artwork-3.jpg";
+import eteaparis from "@/assets/eteaparis.jpg";
+import lacolonnemorris from "@/assets/lacolonnemorris.jpg";
+import firstkissaucanal from "@/assets/firstkissaucanal.jpg";
 const Index = () => {
   return <Layout>
       {/* Hero Section */}
@@ -56,34 +56,44 @@ const Index = () => {
             {/* Card 1 */}
             <Link to="/aquarelles" className="group block hover-lift">
               <div className="image-reveal aspect-square rounded-lg overflow-hidden mb-4">
-                <img src={artwork1} alt="Branche botanique en aquarelle" className="w-full h-full object-cover object-top" src="/lovable-uploads/44e670f3-c898-4ddb-82f8-4f9f40ad0443.jpg" />
+                <img src={eteaparis} alt="Ete à Paris" className="w-full h-full object-cover object-top" src="/lovable-uploads/44e670f3-c898-4ddb-82f8-4f9f40ad0443.jpg" />
               </div>
               <h3 className="font-display text-xl text-foreground mb-2">
                 Impressions
               </h3>
-              <p className="font-body text-sm text-muted-foreground">Des souvenirs au format carte postale, imprimés sur un papier de qualité.</p>
+              <p className="font-body text-sm text-muted-foreground">
+                Des souvenirs au format carte postale, 
+                imprimés sur un papier de qualité.
+              </p>
             </Link>
 
             {/* Card 2 */}
             <Link to="/aquarelles" className="group block hover-lift">
               <div className="image-reveal aspect-square rounded-lg overflow-hidden mb-4">
-                <img src={artwork1} alt="Vagues abstraites en aquarelle" className="w-full h-full object-cover" src="/lovable-uploads/94bbc4d6-91d7-4b9d-b7e7-756c0230c819.jpg" />
+                <img src={lacolonnemorris} alt="La colonne Morris" className="w-full h-full object-cover" src="/lovable-uploads/94bbc4d6-91d7-4b9d-b7e7-756c0230c819.jpg" />
               </div>
               <h3 className="font-display text-xl text-foreground mb-2">
                 Tirages limités
               </h3>
-              <p className="font-body text-sm text-muted-foreground">Tirages d’aquarelle en édition limitée, numérotés et signés à la main. Imprimés sur papier d’art.</p>
+              <p className="font-body text-sm text-muted-foreground">
+                Tirages d’aquarelle en édition limitée, 
+                numérotés et signés à la main. 
+                Imprimés sur papier d’art.
+              </p>
             </Link>
 
             {/* Card 3 */}
             <Link to="/aquarelles" className="group block hover-lift">
               <div className="image-reveal aspect-square rounded-lg overflow-hidden mb-4">
-                <img src={artwork1} alt="Paysage de montagnes brumeuses" className="w-full h-full object-cover" src="/lovable-uploads/a93574b9-e42e-460b-8da6-19435320affb.jpg" />
+                <img src={firstkissaucanal} alt="First kiss au Canal Saint Martin" className="w-full h-full object-cover" src="/lovable-uploads/a93574b9-e42e-460b-8da6-19435320affb.jpg" />
               </div>
               <h3 className="font-display text-xl text-foreground mb-2">
                 Créations uniques
               </h3>
-              <p className="font-body text-sm text-muted-foreground">Une aquarelle originale personnalisée, pour offrir un cadeau unique.</p>
+              <p className="font-body text-sm text-muted-foreground">
+                Une aquarelle originale personnalisée, 
+                pour offrir un cadeau unique.
+              </p>
             </Link>
           </div>
 
@@ -103,8 +113,9 @@ const Index = () => {
               Une création sur mesure ?
             </h2>
             <p className="font-body text-muted-foreground mb-10">
-              Vous souhaitez une aquarelle personnalisée pour un événement 
-              particulier ou un cadeau unique ? N'hésitez pas à me contacter.
+              Contactez-moi pour imaginer ensemble une aquarelle personnalisée.
+              Que vous ayez une idée précise ou simplement une envie, 
+              je vous accompagnerai pour créer un cadeau sur mesure.
             </p>
             <Link to="/contact" className="inline-block font-body text-sm tracking-widest uppercase px-8 py-4 border border-foreground/30 rounded-full hover:bg-foreground hover:text-background transition-all duration-300">
               Me contacter
