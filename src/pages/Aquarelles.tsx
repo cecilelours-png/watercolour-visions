@@ -6,30 +6,112 @@ import lacolonnemorris from "@/assets/lacolonnemorris.jpg";
 
 type TabType = "impressions" | "tirages" | "uniques";
 
-const tabs = [
-  { id: "impressions" as TabType, label: "Impressions" },
-  { id: "tirages" as TabType, label: "Tirages limités" },
-  { id: "uniques" as TabType, label: "Créations uniques" },
+type SubFilter = {
+  id: string;
+  label: string;
+};
+
+const tabs: { id: TabType; label: string; subFilters: SubFilter[] }[] = [
+  {
+    id: "impressions",
+    label: "Impressions",
+    subFilters: [
+      { id: "saisons", label: "Saisons parisiennes" },
+      { id: "mobilier", label: "Mobilier parisien" },
+    ],
+  },
+  {
+    id: "tirages",
+    label: "Tirages limités",
+    subFilters: [
+      { id: "inspiration", label: "Inspiration parisienne" },
+    ],
+  },
+  {
+    id: "uniques",
+    label: "Créations uniques",
+    subFilters: [
+      { id: "lieux", label: "Vos lieux préférés" },
+      { id: "enfants", label: "Vos enfants adorés" },
+      { id: "vacances", label: "Souvenirs de vacances" },
+      { id: "voeux", label: "Carte de voeux" },
+      { id: "autres", label: "Autres projets perso" },
+    ],
+  },
 ];
 
 const artworks = {
-  impressions: [
-    { id: 1, image: eteaparis, title: "Branche de printemps", price: "45 €" },
-    { id: 2, image: firstkissaucanal, title: "Vagues d'été", price: "45 €" },
-    { id: 3, image: lacolonnemorris, title: "Brume matinale", price: "45 €" },
-  ],
-  tirages: [
-    { id: 1, image: lacolonnemorris, title: "Horizon paisible", price: "120 €", edition: "1/30" },
-    { id: 2, image: eteaparis, title: "Floraison délicate", price: "120 €", edition: "5/30" },
-  ],
-  uniques: [
-    { id: 1, image: firstkissaucanal, title: "L'océan rêveur", price: "350 €", size: "30 x 40 cm" },
-    { id: 2, image: lacolonnemorris, title: "Montagnes de brume", price: "450 €", size: "40 x 50 cm" },
-  ],
+  impressions: {
+    saisons: [
+      { id: 1, image: eteaparis, title: "Été à Paris", price: "45 €" },
+      { id: 2, image: firstkissaucanal, title: "Printemps au canal", price: "45 €" },
+    ],
+    mobilier: [
+      { id: 3, image: lacolonnemorris, title: "La colonne Morris", price: "45 €" },
+    ],
+  },
+  tirages: {
+    inspiration: [
+      { id: 1, image: lacolonnemorris, title: "Horizon paisible", price: "120 €", edition: "1/30" },
+      { id: 2, image: eteaparis, title: "Floraison délicate", price: "120 €", edition: "5/30" },
+    ],
+  },
+  uniques: {
+    lieux: [
+      { id: 1, image: firstkissaucanal, title: "L'océan rêveur", price: "350 €", size: "30 x 40 cm" },
+    ],
+    enfants: [
+      { id: 2, image: lacolonnemorris, title: "Portrait personnalisé", price: "450 €", size: "40 x 50 cm" },
+    ],
+    vacances: [],
+    voeux: [],
+    autres: [],
+  },
+};
+
+const tabDescriptions = {
+  impressions: {
+    title: "Impressions d'art",
+    description: "Reproductions fidèles sur papier d'art de haute qualité. Chaque impression est réalisée avec des encres pigmentaires garantissant une durabilité exceptionnelle.",
+  },
+  tirages: {
+    title: "Tirages limités",
+    description: "Éditions numérotées et signées à la main. Chaque tirage est accompagné d'un certificat d'authenticité et produit en quantité limitée à 30 exemplaires.",
+  },
+  uniques: {
+    title: "Créations uniques",
+    description: "Œuvres originales peintes à la main sur papier aquarelle 100% coton. Chaque pièce est unique et témoigne d'un moment créatif particulier.",
+  },
 };
 
 const Aquarelles = () => {
   const [activeTab, setActiveTab] = useState<TabType>("impressions");
+  const [activeSubFilter, setActiveSubFilter] = useState<string | null>(null);
+
+  const currentTab = tabs.find((t) => t.id === activeTab);
+  const subFilters = currentTab?.subFilters || [];
+
+  const handleTabClick = (tabId: TabType) => {
+    setActiveTab(tabId);
+    // Reset sub-filter when changing main tab
+    setActiveSubFilter(null);
+  };
+
+  const handleSubFilterClick = (subFilterId: string) => {
+    setActiveSubFilter(activeSubFilter === subFilterId ? null : subFilterId);
+  };
+
+  // Get artworks based on current filters
+  const getCurrentArtworks = () => {
+    const tabArtworks = artworks[activeTab];
+    if (activeSubFilter && tabArtworks[activeSubFilter as keyof typeof tabArtworks]) {
+      return tabArtworks[activeSubFilter as keyof typeof tabArtworks] || [];
+    }
+    // If no sub-filter selected, show all artworks from all sub-categories
+    return Object.values(tabArtworks).flat();
+  };
+
+  const currentArtworks = getCurrentArtworks();
 
   return (
     <Layout>
@@ -49,11 +131,12 @@ const Aquarelles = () => {
       {/* Tabs Navigation */}
       <section className="py-8 border-b border-border">
         <div className="container">
+          {/* Main Tabs */}
           <nav className="flex flex-wrap justify-center gap-2 md:gap-8">
             {tabs.map((tab) => (
               <button
                 key={tab.id}
-                onClick={() => setActiveTab(tab.id)}
+                onClick={() => handleTabClick(tab.id)}
                 className={`font-body text-sm md:text-base px-4 py-2 rounded-full transition-all duration-300 ${
                   activeTab === tab.id
                     ? "bg-foreground text-background"
@@ -64,6 +147,25 @@ const Aquarelles = () => {
               </button>
             ))}
           </nav>
+
+          {/* Sub-filters */}
+          {subFilters.length > 0 && (
+            <nav className="flex flex-wrap justify-center gap-2 md:gap-4 mt-4 pt-4 border-t border-border/50">
+              {subFilters.map((subFilter) => (
+                <button
+                  key={subFilter.id}
+                  onClick={() => handleSubFilterClick(subFilter.id)}
+                  className={`font-body text-xs md:text-sm px-3 py-1.5 rounded-full transition-all duration-300 ${
+                    activeSubFilter === subFilter.id
+                      ? "bg-foreground text-background"
+                      : "text-muted-foreground hover:text-foreground border border-border/50"
+                  }`}
+                >
+                  {subFilter.label}
+                </button>
+              ))}
+            </nav>
+          )}
         </div>
       </section>
 
@@ -72,81 +174,59 @@ const Aquarelles = () => {
         <div className="container">
           {/* Tab Description */}
           <div className="max-w-2xl mx-auto text-center mb-12">
-            {activeTab === "impressions" && (
-              <>
-                <h2 className="font-display text-2xl md:text-3xl text-foreground mb-4">
-                  Impressions d'art
-                </h2>
-                <p className="font-body text-muted-foreground">
-                  Reproductions fidèles sur papier d'art de haute qualité. 
-                  Chaque impression est réalisée avec des encres pigmentaires 
-                  garantissant une durabilité exceptionnelle.
-                </p>
-              </>
-            )}
-            {activeTab === "tirages" && (
-              <>
-                <h2 className="font-display text-2xl md:text-3xl text-foreground mb-4">
-                  Tirages limités
-                </h2>
-                <p className="font-body text-muted-foreground">
-                  Éditions numérotées et signées à la main. Chaque tirage est 
-                  accompagné d'un certificat d'authenticité et produit en 
-                  quantité limitée à 30 exemplaires.
-                </p>
-              </>
-            )}
-            {activeTab === "uniques" && (
-              <>
-                <h2 className="font-display text-2xl md:text-3xl text-foreground mb-4">
-                  Créations uniques
-                </h2>
-                <p className="font-body text-muted-foreground">
-                  Œuvres originales peintes à la main sur papier aquarelle 
-                  100% coton. Chaque pièce est unique et témoigne d'un moment 
-                  créatif particulier.
-                </p>
-              </>
-            )}
+            <h2 className="font-display text-2xl md:text-3xl text-foreground mb-4">
+              {tabDescriptions[activeTab].title}
+            </h2>
+            <p className="font-body text-muted-foreground">
+              {tabDescriptions[activeTab].description}
+            </p>
           </div>
 
           {/* Artworks Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {artworks[activeTab].map((artwork) => (
-              <article
-                key={artwork.id}
-                className="group hover-lift"
-              >
-                <div className="image-reveal aspect-square rounded-lg overflow-hidden mb-4 bg-secondary">
-                  <img
-                    src={artwork.image}
-                    alt={artwork.title}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="flex items-start justify-between gap-4">
-                  <div>
-                    <h3 className="font-display text-lg text-foreground mb-1">
-                      {artwork.title}
-                    </h3>
-                    {"edition" in artwork && (
-                      <p className="font-body text-xs text-muted-foreground">
-                        Édition {artwork.edition}
-                      </p>
-                    )}
-                    {"size" in artwork && (
-                      <p className="font-body text-xs text-muted-foreground">
-                        {artwork.size}
-                      </p>
-                    )}
+          {currentArtworks.length > 0 ? (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {currentArtworks.map((artwork) => (
+                <article
+                  key={artwork.id}
+                  className="group hover-lift"
+                >
+                  <div className="image-reveal aspect-square rounded-lg overflow-hidden mb-4 bg-secondary">
+                    <img
+                      src={artwork.image}
+                      alt={artwork.title}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
-                  <span className="font-body text-foreground">
-                    {artwork.price}
-                  </span>
-                </div>
-              </article>
-            ))}
-          </div>
+                  <div className="flex items-start justify-between gap-4">
+                    <div>
+                      <h3 className="font-display text-lg text-foreground mb-1">
+                        {artwork.title}
+                      </h3>
+                      {"edition" in artwork && (
+                        <p className="font-body text-xs text-muted-foreground">
+                          Édition {artwork.edition}
+                        </p>
+                      )}
+                      {"size" in artwork && (
+                        <p className="font-body text-xs text-muted-foreground">
+                          {artwork.size}
+                        </p>
+                      )}
+                    </div>
+                    <span className="font-body text-foreground">
+                      {artwork.price}
+                    </span>
+                  </div>
+                </article>
+              ))}
+            </div>
+          ) : (
+            <div className="text-center py-12">
+              <p className="font-body text-muted-foreground">
+                Aucune œuvre disponible dans cette catégorie pour le moment.
+              </p>
+            </div>
+          )}
         </div>
       </section>
 
