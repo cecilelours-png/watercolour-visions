@@ -1,8 +1,8 @@
 import { useState } from "react";
 import Layout from "@/components/layout/Layout";
-import artwork1 from "@/assets/artwork-1.jpg";
-import artwork2 from "@/assets/artwork-2.jpg";
-import artwork3 from "@/assets/artwork-3.jpg";
+import eteaparis from "@/assets/eteaparis.jpg";
+import firstkissaucanal from "@/assets/firstkissaucanal.jpg";
+import lacolonnemorris from "@/assets/lacolonnemorris.jpg";
 
 type TabType = "impressions" | "tirages" | "uniques";
 
