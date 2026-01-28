@@ -17,6 +17,9 @@ import albane from "@/assets/albane.JPEG";
 import canal from "@/assets/canal.JPEG";
 import grau from "@/assets/grau.JPEG";
 import norvege from "@/assets/norvege.JPEG";
+import matisse from "@/assets/matisse.JPEG";
+import ronron from "@/assets/ronron.JPEG";
+import swing from "@/assets/swing.JPEG";
 
 type TabType = "impressions" | "tirages" | "uniques";
 
@@ -92,7 +95,11 @@ const artworks = {
       { id: 2, image: norvege, title: "Voyage en Norvège", size: "A4" },
     ],
     voeux: [],
-    autres: [],
+    autres: [
+      { id: 2, image: matisse, title: "La blouse romaine", size: "13 x 18 cm" },
+      { id: 2, image: ronron, title: "Ronron thérapie", size: "13 x 18 cm" },
+      { id: 2, image: swing, title: "Let's swing", size: "13 x 18 cm double" },
+    ],
   },
 };
 
