@@ -3,6 +3,10 @@ import Layout from "@/components/layout/Layout";
 import eteaparis from "@/assets/eteaparis.jpg";
 import firstkissaucanal from "@/assets/firstkissaucanal.jpg";
 import lacolonnemorris from "@/assets/lacolonnemorris.jpg";
+import ete from "@/assets/ete.JPEG";
+import automne from "@/assets/automne.JPEG";
+import hiver from "@/assets/hiver.JPEG";
+import printemps from "@/assets/printemps.JPEG";
 
 type TabType = "impressions" | "tirages" | "uniques";
 
@@ -43,8 +47,11 @@ const tabs: { id: TabType; label: string; subFilters: SubFilter[] }[] = [
 const artworks = {
   impressions: {
     saisons: [
-      { id: 1, image: eteaparis, title: "Été à Paris", price: "45 €" },
-      { id: 2, image: firstkissaucanal, title: "Printemps au canal", price: "45 €" },
+      { id: 1, image: printemps, title: "Printemps à Paris", price: "2,50 €" },
+      { id: 2, image: ete, title: "Été à Paris", price: "2,50 €" },
+      { id: 3, image: automne, title: "Automne à Paris", price: "2,50 €" },
+      { id: 4, image: hiver, title: "Hiver à Paris", price: "2,50 €" },
+      
     ],
     mobilier: [
       { id: 3, image: lacolonnemorris, title: "La colonne Morris", price: "45 €" },
