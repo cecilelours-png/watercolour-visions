@@ -9,6 +9,11 @@ import metro from "@/assets/metro.JPEG";
 import lampadaire from "@/assets/lampadaire.JPEG";
 import colonnemorris from "@/assets/colonnemorris.JPEG";
 import metropolitain from "@/assets/metropolitain.JPEG";
+import agathe from "@/assets/agathe.JPEG";
+import alix from "@/assets/alix.JPEG";
+import leonard from "@/assets/leonard.JPEG";
+import lou from "@/assets/lou.JPEG";
+import albane from "@/assets/albane.JPEG";
 
 type TabType = "impressions" | "tirages" | "uniques";
 
@@ -72,7 +77,11 @@ const artworks = {
       { id: 1, image: firstkissaucanal, title: "L'océan rêveur", price: "350 €", size: "30 x 40 cm" },
     ],
     enfants: [
-      { id: 2, image: lacolonnemorris, title: "Portrait personnalisé", price: "450 €", size: "40 x 50 cm" },
+      { id: 2, image: agathe, title: "Agathe", size: "13 x 18 cm" },
+      { id: 2, image: alix, title: "Alix", size: "13 x 18 cm" },
+      { id: 2, image: leonard, title: "Léonard", size: "13 x 18 cm" },
+      { id: 2, image: lou, title: "Lou", size: "13 x 18 cm" },
+      { id: 2, image: albane, title: "Albane", size: "13 x 18 cm" },
     ],
     vacances: [],
     voeux: [],
