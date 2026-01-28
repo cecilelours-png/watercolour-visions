@@ -7,6 +7,9 @@ import ete from "@/assets/ete.JPEG";
 import automne from "@/assets/automne.JPEG";
 import hiver from "@/assets/hiver.JPEG";
 import printemps from "@/assets/printemps.JPEG";
+import banc from "@/assets/banc.JPEG";
+import metro from "@/assets/metro.JPEG";
+import lampadaire from "@/assets/lampadaire.JPEG";
 
 type TabType = "impressions" | "tirages" | "uniques";
 
@@ -54,7 +57,9 @@ const artworks = {
       
     ],
     mobilier: [
-      { id: 3, image: lacolonnemorris, title: "La colonne Morris", price: "45 €" },
+      { id: 5, image: lampadaire, title: "Le lampadaire", price: "2,50 €" },
+      { id: 6, image: metro, title: "Le métro", price: "2,50 €" },
+      { id: 7, image: Banc, title: "Le banc", price: "2,50 €" },
     ],
   },
   tirages: {
