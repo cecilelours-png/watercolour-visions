@@ -22,9 +22,7 @@ const Index = () => {
             <span className="text-muted-foreground">ou à s'offrir</span>
           </h1>
           <p className="font-body text-lg md:text-xl text-muted-foreground max-w-xl mx-auto animate-fade-in-delay mb-10">
-            Un cadeau personnel, une œuvre à collectionner,
-          </p>
-          <p className="font-body text-lg md:text-xl text-muted-foreground max-w-xl mx-auto animate-fade-in-delay mb-10">
+            Un cadeau personnel, une œuvre à collectionner,<br />
             une carte à envoyer ou à afficher... 
           </p>
           <Link to="/aquarelles" className="inline-block font-body text-sm tracking-widest uppercase px-8 py-4 border border-foreground/30 rounded-full hover:bg-foreground hover:text-background transition-all duration-300 animate-fade-in-delay-2">
