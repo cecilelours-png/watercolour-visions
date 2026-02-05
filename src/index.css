@@ -45,6 +45,11 @@
     --blush: 22 75% 85%;
     --sage: 22 50% 88%;
     
+    /* Pricing cards colors */
+    --pricing-light: 16 50% 94%;
+    --pricing-medium: 17 55% 81%;
+    --pricing-dark: 18 43% 68%;
+    
     /* Typography */
     --font-display: 'Playfair Display', serif;
     --font-body: 'DM Sans', sans-serif;
