@@ -77,9 +77,9 @@ const Tarifs = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {pricingTiers.map((tier) => {
               const variantClasses = {
-                light: "bg-secondary/40 border border-border",
-                medium: "bg-secondary/70 border border-border",
-                dark: "bg-foreground/20 border border-foreground/30",
+                light: "bg-pricing-light border border-border",
+                medium: "bg-pricing-medium border border-border",
+                dark: "bg-pricing-dark border border-border",
               };
               return (
               <div

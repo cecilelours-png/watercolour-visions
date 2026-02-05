@@ -32,6 +32,9 @@ export default {
         charcoal: "hsl(var(--charcoal))",
         blush: "hsl(var(--blush))",
         sage: "hsl(var(--sage))",
+        "pricing-light": "hsl(var(--pricing-light))",
+        "pricing-medium": "hsl(var(--pricing-medium))",
+        "pricing-dark": "hsl(var(--pricing-dark))",
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
