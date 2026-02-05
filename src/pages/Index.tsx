@@ -39,8 +39,10 @@ const Index = () => {
               L'univers Colours Await
             </h2>
             <p className="font-body text-muted-foreground leading-relaxed">
-              Je peins des aquarelles pensées pour devenir des cadeaux personnels,
-              porteurs d’une histoire, d’une émotion, d’un lien que l’on choisit d’offrir.</p>
+              Je peins les aquarelles que vous imaginez,<br />
+              que vous pouvez offrir comme un cadeau personnel<br />
+              qui raconte votre histoire ou une émotion.
+            </p>
           </div>
         </div>
       </section>
