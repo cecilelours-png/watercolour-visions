@@ -6,44 +6,44 @@
 
 @layer base {
   :root {
-    /* Peachy beige palette - soft and feminine */
+    /* Terracota, copper, orange palette */
     --background: 30 40% 97%;
-    --foreground: 20 15% 25%;
+    --foreground: 20 30% 20%;
 
     --card: 25 35% 95%;
-    --card-foreground: 20 15% 25%;
+    --card-foreground: 20 30% 20%;
 
     --popover: 30 40% 97%;
-    --popover-foreground: 20 15% 25%;
+    --popover-foreground: 20 30% 20%;
 
-    --primary: 20 20% 40%;
+    --primary: 22 70% 45%;
     --primary-foreground: 30 40% 97%;
 
-    --secondary: 25 30% 93%;
-    --secondary-foreground: 20 15% 25%;
+    --secondary: 30 60% 65%;
+    --secondary-foreground: 20 30% 20%;
 
     --muted: 28 25% 94%;
-    --muted-foreground: 20 12% 50%;
+    --muted-foreground: 20 15% 50%;
 
-    --accent: 15 40% 92%;
-    --accent-foreground: 20 15% 25%;
+    --accent: 18 75% 58%;
+    --accent-foreground: 20 30% 20%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 20 25% 88%;
     --input: 20 25% 88%;
-    --ring: 20 20% 40%;
+    --ring: 22 70% 45%;
 
     --radius: 0.75rem;
 
     /* Custom colors for the art site */
     --cream: 30 40% 97%;
-    --warm-beige: 28 35% 92%;
-    --soft-taupe: 20 15% 65%;
-    --charcoal: 20 15% 25%;
-    --blush: 12 45% 93%;
-    --sage: 15 30% 90%;
+    --warm-beige: 22 60% 75%;
+    --soft-taupe: 22 40% 55%;
+    --charcoal: 20 30% 20%;
+    --blush: 22 75% 85%;
+    --sage: 22 50% 88%;
     
     /* Typography */
     --font-display: 'Playfair Display', serif;
@@ -61,32 +61,32 @@
 
   .dark {
     --background: 30 10% 10%;
-    --foreground: 40 20% 95%;
+    --foreground: 22 30% 90%;
 
     --card: 30 10% 12%;
-    --card-foreground: 40 20% 95%;
+    --card-foreground: 22 30% 90%;
 
     --popover: 30 10% 10%;
-    --popover-foreground: 40 20% 95%;
+    --popover-foreground: 22 30% 90%;
 
-    --primary: 35 20% 85%;
+    --primary: 22 75% 60%;
     --primary-foreground: 30 10% 10%;
 
-    --secondary: 30 8% 18%;
-    --secondary-foreground: 40 20% 95%;
+    --secondary: 22 60% 50%;
+    --secondary-foreground: 22 30% 90%;
 
     --muted: 30 8% 18%;
-    --muted-foreground: 35 15% 65%;
+    --muted-foreground: 22 30% 65%;
 
-    --accent: 30 8% 18%;
-    --accent-foreground: 40 20% 95%;
+    --accent: 18 80% 65%;
+    --accent-foreground: 30 10% 10%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 30 8% 20%;
     --input: 30 8% 20%;
-    --ring: 35 20% 85%;
+    --ring: 22 75% 60%;
 
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
