@@ -63,8 +63,8 @@ const Tarifs = () => {
             Tarifs
           </h1>
           <p className="font-body text-muted-foreground max-w-xl mx-auto">
-            Des options pour tous les budgets, de l'impression accessible 
-            à l'œuvre originale unique.
+            Des options pour tous les budgets,<b />
+            de l'impression à l'œuvre originale unique.
           </p>
         </div>
       </section>
