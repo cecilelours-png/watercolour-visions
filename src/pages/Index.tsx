@@ -115,8 +115,8 @@ const Index = () => {
               Une création sur mesure ?
             </h2>
             <p className="font-body text-muted-foreground mb-10">
-              Contactez-moi pour imaginer ensemble une aquarelle personnalisée.
-              Que vous ayez une idée précise ou simplement une envie, 
+              Contactez-moi pour imaginer ensemble une aquarelle personnalisée.<br />
+              Que vous ayez une idée précise ou simplement une envie,<br />
               je vous accompagnerai pour créer un cadeau sur mesure.
             </p>
             <Link to="/contact" className="inline-block font-body text-sm tracking-widest uppercase px-8 py-4 border border-foreground/30 rounded-full hover:bg-foreground hover:text-background transition-all duration-300">
