@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Layout from "@/components/layout/Layout";
 import { Check } from "lucide-react";
+import { Switch } from "@/components/ui/switch";
 
 const pricingTiers = [
   {
@@ -94,18 +95,23 @@ const Tarifs = () => {
                 </p>
 
                 {/* Prices */}
-                <div className="space-y-4 mb-8">
+                <div className="space-y-5 mb-8">
                   {tier.prices.map((item) => (
-                    <div
-                      key={item.size}
-                      className="flex items-center justify-between"
-                    >
-                      <span className="font-body text-sm text-muted-foreground">
-                        {item.size}
-                      </span>
-                      <span className="font-body font-medium text-foreground">
-                        {item.price}
-                      </span>
+                    <div key={item.size} className="space-y-2">
+                      <div className="flex items-center justify-between">
+                        <span className="font-body text-sm text-muted-foreground">
+                          {item.size}
+                        </span>
+                        <span className="font-body font-medium text-foreground">
+                          {item.price}
+                        </span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <Switch className="scale-75 origin-left" />
+                        <span className="font-body text-xs text-muted-foreground">
+                          Option encadré +2,50 €
+                        </span>
+                      </div>
                     </div>
                   ))}
                 </div>
