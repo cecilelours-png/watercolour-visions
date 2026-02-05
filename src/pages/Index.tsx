@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import Layout from "@/components/layout/Layout";
 import heroImage from "@/assets/hero-watercolor.jpg";
 import saisonsparis from "@/assets/saisonsparis.jpg";
-import colonnemorrispres from "@/assets/lacolonnemorrispres.jpg";
+import colonnemorrispres from "@/assets/colonnemorrispres.jpg";
 import firstkiss from "@/assets/firstkiss.jpg";
 const Index = () => {
   return <Layout>
