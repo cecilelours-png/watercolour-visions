@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import Layout from "@/components/layout/Layout";
-import { Check } from "lucide-react";
-import { Switch } from "@/components/ui/switch";
+import { Check, ChevronRight } from "lucide-react";
 
 const pricingTiers = [
   {
@@ -106,8 +105,8 @@ const Tarifs = () => {
                           {item.price}
                         </span>
                       </div>
-                      <div className="flex items-center gap-2">
-                        <Switch className="scale-75 origin-left" />
+                      <div className="flex items-center gap-1">
+                        <ChevronRight size={14} className="text-muted-foreground" />
                         <span className="font-body text-xs text-muted-foreground">
                           Option encadré +2,50 €
                         </span>
