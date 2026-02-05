@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import Layout from "@/components/layout/Layout";
 import heroImage from "@/assets/hero-watercolor.jpg";
-import eteaparis from "@/assets/eteaparis.jpg";
-import lacolonnemorris from "@/assets/lacolonnemorris.jpg";
-import firstkissaucanal from "@/assets/firstkissaucanal.jpg";
+import saisonsparis from "@/assets/saisonsparis.jpg";
+import colonnemorrispres from "@/assets/lacolonnemorrispres.jpg";
+import firstkiss from "@/assets/firstkiss.jpg";
 const Index = () => {
   return <Layout>
       {/* Hero Section */}
@@ -58,7 +58,7 @@ const Index = () => {
             {/* Card 1 */}
             <Link to="/aquarelles" className="group block hover-lift">
               <div className="image-reveal aspect-square rounded-lg overflow-hidden mb-4">
-                <img src={eteaparis} alt="Ete à Paris" className="w-full h-full object-cover object-top" />
+                <img src={saisonsparis} alt="Collection Saisons à Paris" className="w-full h-full object-cover object-top" />
               </div>
               <h3 className="font-display text-xl text-foreground mb-2">
                 Impressions
@@ -72,7 +72,7 @@ const Index = () => {
             {/* Card 2 */}
             <Link to="/aquarelles" className="group block hover-lift">
               <div className="image-reveal aspect-square rounded-lg overflow-hidden mb-4">
-                <img src={lacolonnemorris} alt="La colonne Morris" className="w-full h-full object-cover object-top" />
+                <img src={colonnemorrispres} alt="La colonne Morris - suggestion de présentation" className="w-full h-full object-cover object-top" />
               </div>
               <h3 className="font-display text-xl text-foreground mb-2">
                 Tirages limités
@@ -87,7 +87,7 @@ const Index = () => {
             {/* Card 3 */}
             <Link to="/aquarelles" className="group block hover-lift">
               <div className="image-reveal aspect-square rounded-lg overflow-hidden mb-4">
-                <img src={firstkissaucanal} alt="First kiss au Canal Saint Martin" className="w-full h-full object-cover object-top" />
+                <img src={firstkiss} alt="First kiss au Canal Saint Martin" className="w-full h-full object-cover object-top" />
               </div>
               <h3 className="font-display text-xl text-foreground mb-2">
                 Créations uniques
