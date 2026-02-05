@@ -17,6 +17,7 @@ const pricingTiers = [
       "Emballage protégé",
       "Envoi sous 5 jours",
     ],
+    variant: "light",
   },
   {
     name: "Tirages limités",
@@ -33,7 +34,7 @@ const pricingTiers = [
       "Papier coton 310g/m²",
       "Envoi sécurisé",
     ],
-    highlighted: true,
+    variant: "medium",
   },
   {
     name: "Créations uniques",
@@ -50,6 +51,7 @@ const pricingTiers = [
       "Certificat d'authenticité",
       "Envoi assuré",
     ],
+    variant: "dark",
   },
 ];
 
@@ -73,27 +75,21 @@ const Tarifs = () => {
       <section className="py-16 md:py-24">
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {pricingTiers.map((tier) => (
+            {pricingTiers.map((tier) => {
+              const variantClasses = {
+                light: "bg-secondary/40 border border-border",
+                medium: "bg-secondary/70 border border-border",
+                dark: "bg-foreground/20 border border-foreground/30",
+              };
+              return (
               <div
                 key={tier.name}
-                className={`rounded-2xl p-8 transition-all duration-300 ${
-                  tier.highlighted
-                    ? "bg-foreground text-background ring-2 ring-foreground"
-                    : "bg-card border border-border hover-lift"
-                }`}
+                className={`rounded-2xl p-8 transition-all duration-300 hover-lift ${variantClasses[tier.variant]}`}
               >
-                <h2
-                  className={`font-display text-2xl mb-2 ${
-                    tier.highlighted ? "text-background" : "text-foreground"
-                  }`}
-                >
+                <h2 className="font-display text-2xl mb-2 text-foreground">
                   {tier.name}
                 </h2>
-                <p
-                  className={`font-body text-sm mb-8 ${
-                    tier.highlighted ? "text-background/70" : "text-muted-foreground"
-                  }`}
-                >
+                <p className="font-body text-sm mb-8 text-muted-foreground">
                   {tier.description}
                 </p>
 
@@ -104,18 +100,10 @@ const Tarifs = () => {
                       key={item.size}
                       className="flex items-center justify-between"
                     >
-                      <span
-                        className={`font-body text-sm ${
-                          tier.highlighted ? "text-background/80" : "text-muted-foreground"
-                        }`}
-                      >
+                      <span className="font-body text-sm text-muted-foreground">
                         {item.size}
                       </span>
-                      <span
-                        className={`font-body font-medium ${
-                          tier.highlighted ? "text-background" : "text-foreground"
-                        }`}
-                      >
+                      <span className="font-body font-medium text-foreground">
                         {item.price}
                       </span>
                     </div>
@@ -123,34 +111,22 @@ const Tarifs = () => {
                 </div>
 
                 {/* Divider */}
-                <div
-                  className={`h-px mb-8 ${
-                    tier.highlighted ? "bg-background/20" : "bg-border"
-                  }`}
-                />
+                <div className="h-px mb-8 bg-border" />
 
                 {/* Features */}
                 <ul className="space-y-3">
                   {tier.features.map((feature) => (
                     <li key={feature} className="flex items-center gap-3">
-                      <Check
-                        size={16}
-                        className={
-                          tier.highlighted ? "text-background" : "text-foreground"
-                        }
-                      />
-                      <span
-                        className={`font-body text-sm ${
-                          tier.highlighted ? "text-background/80" : "text-muted-foreground"
-                        }`}
-                      >
+                      <Check size={16} className="text-foreground" />
+                      <span className="font-body text-sm text-muted-foreground">
                         {feature}
                       </span>
                     </li>
                   ))}
                 </ul>
               </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>
