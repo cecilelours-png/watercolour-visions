@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import Layout from "@/components/layout/Layout";
-import { Check, ChevronRight } from "lucide-react";
+import { Check, CornerDownRight } from "lucide-react";
 
 const pricingTiers = [
   {
@@ -106,7 +106,7 @@ const Tarifs = () => {
                         </span>
                       </div>
                       <div className="flex items-center gap-1">
-                        <ChevronRight size={14} className="text-muted-foreground" />
+                        <CornerDownRight size={12} className="text-muted-foreground" />
                         <span className="font-body text-xs text-muted-foreground">
                           Option encadré +2,50 €
                         </span>
