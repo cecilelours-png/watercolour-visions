@@ -246,7 +246,7 @@ const Aquarelles = () => {
                       </h3>
                       {"edition" in artwork && (
                         <p className="font-body text-xs text-muted-foreground">
-                          Édition {artwork.edition}
+                          Édition {(artwork as { edition: string }).edition}
                         </p>
                       )}
                       {"size" in artwork && (
@@ -255,9 +255,11 @@ const Aquarelles = () => {
                         </p>
                       )}
                     </div>
-                    <span className="font-body text-foreground">
-                      {artwork.price}
-                    </span>
+                    {"price" in artwork && (
+                      <span className="font-body text-foreground">
+                        {(artwork as { price: string }).price}
+                      </span>
+                    )}
                   </div>
                 </article>
               ))}
