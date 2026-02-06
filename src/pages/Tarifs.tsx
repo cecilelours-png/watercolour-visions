@@ -5,16 +5,14 @@ import { Check, CornerDownRight } from "lucide-react";
 const pricingTiers = [
   {
     name: "Impressions",
-    description: "Reproductions sur papier d'art",
+    description: "Reproductions au format carte postale",
     prices: [
-      { size: "A5 (15 x 21 cm)", price: "25 €" },
-      { size: "A4 (21 x 30 cm)", price: "45 €" },
-      { size: "A3 (30 x 42 cm)", price: "65 €" },
+      { size: "10,5 x 14,8 cm (A6)", price: "2,50 €" },
     ],
     features: [
-      "Papier d'art 300g/m²",
-      "Encres pigmentaires",
+      "Papier Diva Art 300g/m²",
       "Emballage protégé",
+      "Enveloppe vierge fournie",
       "Envoi sous 5 jours",
     ],
     variant: "light",
@@ -23,33 +21,30 @@ const pricingTiers = [
     name: "Tirages limités",
     description: "Éditions numérotées et signées",
     prices: [
-      { size: "30 x 40 cm", price: "120 €" },
-      { size: "40 x 50 cm", price: "180 €" },
-      { size: "50 x 70 cm", price: "250 €" },
+      { size: "14,8 x 21 cm (A5)", price: "15 €" },
     ],
     features: [
-      "Limité à 30 exemplaires",
-      "Signé et numéroté",
-      "Certificat d'authenticité",
-      "Papier coton 310g/m²",
-      "Envoi sécurisé",
+      "Papier d'art Olin 300g/m²",
+      "Emballage protégé",
+      "Edition limitée à 30 exemplaires",
+      "Envoi sous 5 jours",
     ],
     variant: "medium",
   },
   {
     name: "Créations uniques",
-    description: "Œuvres originales",
+    description: "Œuvres originales sur commande",
     prices: [
-      { size: "24 x 32 cm", price: "À partir de 200 €" },
-      { size: "30 x 40 cm", price: "À partir de 350 €" },
-      { size: "40 x 50 cm", price: "À partir de 450 €" },
+      { size: "10,5 x 14,8 cm (A6)", price: "20 €" },
+      { size: "13 x 18 cm", price: "25 €" },
+      { size: "14,8 x 21 cm (A5)", price: "28 €" },
+      { size: "21 x 29,7 cm (A4)", price: "40 €" },
     ],
     features: [
-      "Pièce unique",
-      "Aquarelle originale",
-      "Papier 100% coton",
-      "Certificat d'authenticité",
-      "Envoi assuré",
+      "Papier aquarelle 300g/m²",
+      "Emballage protégé", 
+      "Œuvre unique sur commande",
+      "Délais selon complexité du projet",
     ],
     variant: "dark",
   },
@@ -65,7 +60,7 @@ const Tarifs = () => {
             Tarifs
           </h1>
           <p className="font-body text-muted-foreground max-w-xl mx-auto">
-            Des options pour tous les budgets,<b />
+            Des options pour tous les budgets,<br />
             de l'impression à l'œuvre originale unique.
           </p>
         </div>
@@ -145,23 +140,19 @@ const Tarifs = () => {
             </h2>
             <div className="font-body text-muted-foreground space-y-4 text-left md:text-center">
               <p>
-                <strong className="text-foreground">Livraison :</strong> France métropolitaine et 
-                international. Frais calculés selon la destination.
+                <strong className="text-foreground">Livraison :</strong><br /> 
+                France métropolitaine : 4 € Lettre Suivie ou Mondial Relay<br /> 
+                International : Frais calculés selon la destination.
               </p>
               <p>
-                <strong className="text-foreground">Paiement :</strong> Virement bancaire ou PayPal. 
-                Paiement en plusieurs fois possible pour les créations uniques.
-              </p>
-              <p>
-                <strong className="text-foreground">Commandes personnalisées :</strong> Sur devis. 
-                N'hésitez pas à me contacter pour discuter de votre projet.
+                <strong className="text-foreground">Paiement :</strong> Virement bancaire ou PayPal avec protection acheteur.
               </p>
             </div>
             <Link
               to="/contact"
               className="inline-block mt-10 font-body text-sm tracking-widest uppercase px-8 py-4 border border-foreground/30 rounded-full hover:bg-foreground hover:text-background transition-all duration-300"
             >
-              Demander un devis
+              En savoir plus
             </Link>
           </div>
         </div>
