@@ -7,7 +7,7 @@ const pricingTiers = [
     name: "Impressions",
     description: "Reproductions au format carte postale",
     prices: [
-      { size: "10,5 x 14,8 cm (A6)", price: "2,50 €" },
+      { size: "10,5 x 14,8 cm (A6)", price: "2,50 €", framedPrice: "+2 €" },
     ],
     features: [
       "Papier Diva Art 300g/m²",
@@ -21,7 +21,7 @@ const pricingTiers = [
     name: "Tirages limités",
     description: "Éditions numérotées et signées",
     prices: [
-      { size: "14,8 x 21 cm (A5)", price: "15 €" },
+      { size: "14,8 x 21 cm (A5)", price: "15 €", framedPrice: "+4 €" },
     ],
     features: [
       "Papier d'art Olin 300g/m²",
@@ -35,10 +35,10 @@ const pricingTiers = [
     name: "Créations uniques",
     description: "Œuvres originales sur commande",
     prices: [
-      { size: "10,5 x 14,8 cm (A6)", price: "20 €" },
-      { size: "13 x 18 cm", price: "25 €" },
-      { size: "14,8 x 21 cm (A5)", price: "28 €" },
-      { size: "21 x 29,7 cm (A4)", price: "40 €" },
+      { size: "10,5 x 14,8 cm (A6)", price: "20 €", framedPrice: "+2 €" },
+      { size: "13 x 18 cm", price: "25 €", framedPrice: "+3 €"  },
+      { size: "14,8 x 21 cm (A5)", price: "28 €", framedPrice: "+4 €" },
+      { size: "21 x 29,7 cm (A4)", price: "40 €", framedPrice: "+4 €" },
     ],
     features: [
       "Papier aquarelle 300g/m²",
@@ -103,7 +103,7 @@ const Tarifs = () => {
                       <div className="flex items-center gap-1">
                         <CornerDownRight size={12} className="text-muted-foreground" />
                         <span className="font-body text-xs text-muted-foreground">
-                          Option encadré +2,50 €
+                          Option encadré {item.framedPrice}
                         </span>
                       </div>
                     </div>
