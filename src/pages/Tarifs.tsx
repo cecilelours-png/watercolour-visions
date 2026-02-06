@@ -92,11 +92,11 @@ const Tarifs = () => {
                 <div className="space-y-5 mb-8">
                   {tier.prices.map((item) => (
                     <div key={item.size} className="space-y-2">
-                      <div className="flex items-center justify-between">
+                      <div className="flex items-center justify-between gap-4">
                         <span className="font-body text-sm text-muted-foreground">
                           {item.size}
                         </span>
-                        <span className="font-body font-medium text-foreground">
+                        <span className="font-body font-medium text-foreground whitespace-nowrap flex items-baseline gap-1">
                           {item.price}
                         </span>
                       </div>
