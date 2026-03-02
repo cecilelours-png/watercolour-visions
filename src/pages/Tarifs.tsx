@@ -141,7 +141,7 @@ const Tarifs = () => {
             <div className="font-body text-muted-foreground space-y-4 text-left md:text-center">
               <p>
                 <strong className="text-foreground">Livraison</strong><br /> 
-                France métropolitaine : 4 € Lettre Suivie ou Mondial Relay<br /> 
+                France métropolitaine : 4 € Lettre Suivie ou Mondial Relay.<br /> 
                 International : Frais calculés selon la destination.
               </p>
               <p>
