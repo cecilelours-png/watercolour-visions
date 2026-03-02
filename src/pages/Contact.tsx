@@ -31,7 +31,8 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="font-body text-foreground leading-relaxed">
-                    Une question, une commande ou envie d'échanger ?{" "}
+                    Une question, une commande ou envie d'échanger ?
+                    <br />
                     <span className="font-medium underline underline-offset-4 decoration-muted-foreground/40 group-hover:decoration-foreground transition-colors">
                       Répondez au formulaire.
                     </span>
@@ -51,7 +52,8 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="font-body text-foreground leading-relaxed">
-                    Vous voulez me contacter directement ?{" "}
+                    Vous voulez me contacter directement ?
+                    <br />
                     <span className="font-medium underline underline-offset-4 decoration-muted-foreground/40 group-hover:decoration-foreground transition-colors">
                       Écrivez-moi.
                     </span>
