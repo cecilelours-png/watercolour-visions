@@ -1,5 +1,5 @@
 import Layout from "@/components/layout/Layout";
-import { FileText, Mail } from "lucide-react";
+import { FileText, Instagram, Mail } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -56,6 +56,29 @@ const Contact = () => {
                     <br />
                     <span className="font-medium underline underline-offset-4 decoration-muted-foreground/40 group-hover:decoration-foreground transition-colors">
                       Écrivez-moi.
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </a>
+
+            {/* Instagram */}
+            <a
+              href="https://www.instagram.com/colours.await/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block p-8 rounded-2xl border border-border bg-card hover:shadow-md transition-all group"
+            >
+              <div className="flex items-start gap-5">
+                <div className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <Instagram size={18} className="text-foreground" />
+                </div>
+                <div>
+                  <p className="font-body text-foreground leading-relaxed">
+                    Retrouvez mon univers au quotidien.
+                    <br />
+                    <span className="font-medium underline underline-offset-4 decoration-muted-foreground/40 group-hover:decoration-foreground transition-colors">
+                      Suivez-moi sur Instagram.
                     </span>
                   </p>
                 </div>
