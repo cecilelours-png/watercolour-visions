@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Instagram } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -33,6 +34,15 @@ const Footer = () => {
             >
               Contact
             </Link>
+            <a
+              href="https://www.instagram.com/colours.await/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+              aria-label="Instagram"
+            >
+              <Instagram size={16} />
+            </a>
           </nav>
 
           {/* Copyright */}

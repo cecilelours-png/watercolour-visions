@@ -1,5 +1,5 @@
 import Layout from "@/components/layout/Layout";
-import { FileText, Mail } from "lucide-react";
+import { FileText, Instagram, Mail } from "lucide-react";
 
 const Contact = () => {
   return (
