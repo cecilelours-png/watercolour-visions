@@ -9,11 +9,12 @@ const NotFound = () => {
   }, [location.pathname]);
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-muted">
-      <div className="text-center">
-        <h1 className="mb-2 text-4xl font-bold">Page not found</h1>
-        <p className="mb-6 text-xl text-muted-foreground">mais pas d'angoisse de la page blanche</p>
-        <a href="/" className="text-primary underline hover:text-primary/90">
+    <div className="flex min-h-screen items-center justify-center bg-background">
+      <div className="text-center px-6">
+        <p className="text-8xl font-['Playfair_Display'] font-semibold text-primary/20 mb-4">404</p>
+        <h1 className="text-2xl font-['Playfair_Display'] font-medium text-foreground mb-3">Page not found</h1>
+        <p className="text-base font-['DM_Sans'] text-muted-foreground mb-8">mais pas d'angoisse de la page blanche...</p>
+        <a href="/" className="font-['DM_Sans'] text-sm text-primary hover:text-primary/80 underline underline-offset-4 transition-colors">
           Retour aux couleurs
         </a>
       </div>
