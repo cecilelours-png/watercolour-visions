@@ -51,8 +51,10 @@ const Index = () => {
                 L'univers Colours Await
               </h2>
               <p className="font-body text-muted-foreground leading-relaxed">
-                Je peins les aquarelles que vous imaginez,<br />
-                que vous pouvez offrir comme un cadeau personnel<br />
+                Hello ! Je suis Cécile, bienvenue à tous ❤️<br />
+                Je peins des aquarelles en m'inspirant de ce qui m'entoure<br />
+                Et je crée aussi ce que vous imaginez<br />
+                pour offrir un beau cadeau personnel<br />
                 qui raconte votre histoire ou une émotion.
               </p>
             </div>
