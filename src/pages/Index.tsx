@@ -55,7 +55,7 @@ const Index = () => {
                 Je peins des aquarelles en m'inspirant de ce qui m'entoure...<br />
                 La nature, la ville ou les gens que j'aime<br />
                 🖌️<br />
-                Et je crée aussi ce que vous imaginez<br />
+                Et je crée aussi ce que vous imaginez :<br />
                 une oeuvre personnelle à offrir ou à collectionner qui raconte votre histoire ou une émotion.
               </p>
             </div>
