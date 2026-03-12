@@ -35,15 +35,27 @@ const Index = () => {
       {/* Introduction Section */}
       <section className="py-20 md:py-32 bg-secondary/30">
         <div className="container">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="font-display text-3xl md:text-4xl text-foreground mb-6">
-              L'univers Colours Await
-            </h2>
-            <p className="font-body text-muted-foreground leading-relaxed">
-              Je peins les aquarelles que vous imaginez,<br />
-              que vous pouvez offrir comme un cadeau personnel<br />
-              qui raconte votre histoire ou une émotion.
-            </p>
+          <div className="flex flex-col md:flex-row items-center gap-10 md:gap-16">
+            {/* Portrait */}
+            <div className="w-40 h-40 md:w-52 md:h-52 flex-shrink-0">
+              <img
+                src={portrait}
+                alt="Portrait de l'artiste"
+                className="w-full h-full rounded-full object-cover"
+              />
+            </div>
+
+            {/* Text - centered in remaining space on desktop, centered on mobile */}
+            <div className="flex-1 text-center">
+              <h2 className="font-display text-3xl md:text-4xl text-foreground mb-6">
+                L'univers Colours Await
+              </h2>
+              <p className="font-body text-muted-foreground leading-relaxed">
+                Je peins les aquarelles que vous imaginez,<br />
+                que vous pouvez offrir comme un cadeau personnel<br />
+                qui raconte votre histoire ou une émotion.
+              </p>
+            </div>
           </div>
         </div>
       </section>
