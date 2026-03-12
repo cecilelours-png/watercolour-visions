@@ -52,10 +52,11 @@ const Index = () => {
               </h2>
               <p className="font-body text-muted-foreground leading-relaxed">
                 Hello ! Je suis Cécile, bienvenue à tous ❤️<br />
-                Je peins des aquarelles en m'inspirant de ce qui m'entoure<br />
+                Je peins des aquarelles en m'inspirant de ce qui m'entoure...<br />
+                La nature, la ville ou les gens que j'aime<br />
+                🖌️<br />
                 Et je crée aussi ce que vous imaginez<br />
-                pour offrir un beau cadeau personnel<br />
-                qui raconte votre histoire ou une émotion.
+                une oeuvre personnelle à offrir ou à collectionner qui raconte votre histoire ou une émotion.
               </p>
             </div>
           </div>
