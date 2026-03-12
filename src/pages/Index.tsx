@@ -4,6 +4,7 @@ import heroImage from "@/assets/hero-watercolor.jpg";
 import saisonsparis from "@/assets/saisonsparis.jpg";
 import colonnemorrispres from "@/assets/colonnemorrispres.jpg";
 import firstkiss from "@/assets/firstkiss.jpg";
+import portrait from "@/assets/portrait.png";
 const Index = () => {
   return <Layout>
       {/* Hero Section */}
