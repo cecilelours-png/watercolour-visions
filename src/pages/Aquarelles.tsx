@@ -24,6 +24,8 @@ import andreas from "@/assets/andreas.jpg";
 import chrysopigi from "@/assets/chrysopigi.jpg";
 import merry from "@/assets/merry.jpg";
 import rouge from "@/assets/rouge.jpg";
+import velolac from "@/assets/velolac.jpg";
+import fleurs from "@/assets/fleurs.jpg";
 
 type TabType = "impressions" | "tirages" | "uniques";
 
@@ -102,11 +104,13 @@ const artworks = {
     voeux: [
       { id: 20, image: merry, title: "Merry 1st Christmas", size: "13 x 18 cm" },
       { id: 21, image: rouge, title: "Lots of Love", size: "13 x 18 cm" },
+      { id: 22, image: velolac, title: "La route du lac", size: "13 x 18 cm double" },
     ],
     autres: [
-      { id: 22, image: matisse, title: "La blouse romaine", size: "13 x 18 cm" },
-      { id: 23, image: ronron, title: "Ronron thérapie", size: "13 x 18 cm" },
-      { id: 24, image: swing, title: "Let's swing", size: "13 x 18 cm double" },
+      { id: 23, image: matisse, title: "La blouse romaine", size: "13 x 18 cm" },
+      { id: 24, image: ronron, title: "Ronron thérapie", size: "13 x 18 cm" },
+      { id: 25, image: swing, title: "Let's swing", size: "13 x 18 cm double" },
+      { id: 26, image: fleurs, title: "Bouquet de fleurs sauvages", size: "13 x 18 cm double" },
     ],
   },
 };
